@@ -116,8 +116,10 @@ body {
 }
 
 .main-container .auth-form .auth-form-body input[type="submit"] {
-    margin-top: 16px;
-    padding: 5px 16px;
+    cursor: pointer;
+    
+    margin-top: 10px;
+    padding: 6px 16px;
 
     width: 100%;
 
@@ -126,8 +128,14 @@ body {
     border: none;
     outline: none;
 
-    border-radius: 5px;
+    border-radius: 5px;  
     
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main-container .auth-form .auth-form-body input[type="submit"]:hover {
+    background-color: #2EA043;
 }
 
 .main-container .auth-form-footer {
