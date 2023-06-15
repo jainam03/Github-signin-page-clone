@@ -42,6 +42,25 @@ body {
     letter-spacing: -0.5px;
 }
 
+.main-container .error-container {
+    display: flex;
+    justify-content: center;
+
+    width: 309px;
+    height: 55px;
+
+    margin: 15px 0 8px;
+    padding: 16px;
+
+    /* background-image: linear-gradient( var(#631c03), var(#) ); */
+    background: linear-gradient(var(rgba(248,81,73,0.1)), var(rgba(248,81,73,0.1)));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(248,81,73,0.4);
+    border-radius: 6px;
+
+    display: none;
+}
+
 .main-container .auth-form {
     background: #161B22;
     border-radius: 5px;

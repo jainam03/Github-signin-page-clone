@@ -26,23 +26,26 @@
             <div class="auth-form-header">
                 <p>Sign in to GitHub</p>
             </div>
+
+            <div class="error-container" id="error-container" >
+                Some fields are empty.
+            </div>
             <div class="auth-form">
 
                 <div class="auth-form-body">
                     <form action="/">
                         <label for="">Username or email address</label>
                         <br> <br>
-                        <input type="email" name="login" autocapitalize="off" autocorrect="off" autocomplete="username"
-                            autofocus="autofocus">
+                        <input type="email" name="email" id="email" autocapitalize="off" autocorrect="off" autocomplete="username" autofocus="autofocus" autocomplete>
+                        <div class="password-container">
+                            <label for="password">Password</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <input type="password" id="password" autocomplete>
                     </form>
 
-                    <div class="password-container">
-                        <label for="password">Password</label>
-                        <a href="#">Forgot password?</a>
-                    </div>
-                    <input type="password">
 
-                    <input type="submit" value="Sign in" class="submit-btn">
+                    <input type="submit" value="Sign in" class="submit-btn" id="submit-btn" onclick="signinEvent()">
                 </div>
 
             </div>
@@ -55,11 +58,12 @@
                     <li><a href="">Terms</a></li>
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Security</a></li>
-                    <li><a href="" class="contact-github" >Contact GitHub</a></li>
+                    <li><a href="" class="contact-github">Contact GitHub</a></li>
                 </ul>
             </div>
         </main>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
